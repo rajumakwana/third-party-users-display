@@ -80,7 +80,7 @@ wpdtpu_datatable_columns
 
 For e.g.,
 
-```json
+```shell
 function wpdtpu_get_columns($data){
 	$data[] = 'email'; //valid column name
 	return $data;
