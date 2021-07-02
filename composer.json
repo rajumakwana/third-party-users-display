@@ -1,0 +1,31 @@
+{
+    "name": "drcsystems/display-third-party-users",
+    "description": "A simple wordpress plugin to display users in table on custom endpoint from third party API",
+    "keywords": ["wordpress", "plugin", "drc", "display-third-party-users", "drcsystems"],
+    "homepage": "https://www.drcsystems.com/",
+    "license": "GPL-2.0+",
+    "authors": [{
+        "name": "Drc Systems",
+        "email": "raju@drcsystems.com",
+        "homepage": "https://www.drcsystems.com/"
+    }],
+    "minimum-stability": "stable",
+    "type": "wordpress-plugin",
+    "support": {
+        "issues": "https://github.com/rajumakwana/display-third-party-users/issues",
+        "forum": "https://wordpress.org/support/plugin/",
+        "wiki": "https://github.com/rajumakwana/display-third-party-users/wiki",
+        "source": "https://github.com/"
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "wp-cli/wp-cli" : "~0.22",
+        "psy/psysh" : "~0.6"
+    },
+    "config": {
+        "vendor-dir": "lib"
+    }
+}
