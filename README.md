@@ -50,7 +50,7 @@ There are options that can be used to customise which can be found under Setting
 
 ## Configuration
 
-After activating the plugin go to Settings->Third Party Users in wp-admin and change the  [`Endpoint Slug`] if you want other wise the default value will be used.
+After activating the plugin go to Settings->Third Party Users in wp-admin and change the  **`Endpoint Slug`** if you want other wise the default value will be used.
 
 Following API is used as default to display users: 
 
@@ -60,7 +60,7 @@ https://jsonplaceholder.typicode.com/users
 
 (You can change the API but make sure your API has the same response structure as the default API)
 
-Visit the page with your [`Endpoint Slug`] to view the data in table
+Visit the page with your **`Endpoint Slug`** to view the data in table
 
 ```json
 http://YOUR_DOMAIN_NAME/ENDPOINT_SLUG
@@ -99,7 +99,7 @@ wp scaffold plugin-tests display-third-party-users
 
 Replace “root” with the username of your database and replace ” with the database password. Also replace “localhost” with the hostname of your database. You can find all three of these values in your wp-config.php file.
 
-You can now type [`phpunit`] OR [`lib/bin/phpunit`] into the command line and the unit tests will run
+You can now type **`phpunit`** OR **`lib/bin/phpunit`** into the command line and the unit tests will run
 
 ### Phpunit Testing Refrence
 
