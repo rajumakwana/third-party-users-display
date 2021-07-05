@@ -22,7 +22,7 @@ It means they can be installed by adding the entry to composer.json `require-dev
 }
 ```
 
-or via command line with: 
+or via command line with: (From your wordpress root)
 
 ```shell
 $ composer require drcsystems/display-third-party-users --dev
@@ -80,7 +80,7 @@ wpdtpu_datatable_columns
 
 For e.g.,
 
-```shell
+```json
 function wpdtpu_get_columns($data){
 	$data[] = 'email'; //valid column name
 	return $data;
@@ -88,5 +88,22 @@ function wpdtpu_get_columns($data){
 
 add_filter( 'wpdtpu_datatable_columns', 'wpdtpu_get_columns',1 );
 ```
+
+## Phpunit Testing
+
+Go to your plugin dir, run this command:
+
+```shell
+wp scaffold plugin-tests display-third-party-users
+```
+
+Replace “root” with the username of your database and replace ” with the database password. Also replace “localhost” with the hostname of your database. You can find all three of these values in your wp-config.php file.
+
+You can now type [`phpunit`] OR [`lib/bin/phpunit`] into the command line and the unit tests will run
+
+### Phpunit Testing Refrence
+
+- [https://pippinsplugins.com/unit-tests-wordpress-plugins-setting-up-testing-suite/]
+- [https://gist.github.com/dotherightthing/c8dede3241909e931e62deaf3acf7b8b]
 
 -------------
