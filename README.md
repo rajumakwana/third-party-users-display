@@ -80,7 +80,7 @@ wpdtpu_datatable_columns
 
 For e.g.,
 
-```json
+```shell
 function wpdtpu_get_columns($data){
 	$data[] = 'email'; //valid column name
 	return $data;
@@ -103,7 +103,7 @@ You can now type [`phpunit`] OR [`lib/bin/phpunit`] into the command line and th
 
 ### Phpunit Testing Refrence
 
-- [https://pippinsplugins.com/unit-tests-wordpress-plugins-setting-up-testing-suite/]
-- [https://gist.github.com/dotherightthing/c8dede3241909e931e62deaf3acf7b8b]
+- https://pippinsplugins.com/unit-tests-wordpress-plugins-setting-up-testing-suite/
+- https://gist.github.com/dotherightthing/c8dede3241909e931e62deaf3acf7b8b
 
 -------------
