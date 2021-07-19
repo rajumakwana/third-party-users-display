@@ -50,15 +50,17 @@ define( 'THIRDPARTYUSERS_PLUGIN_FULL_PATH', __FILE__ );
 
 require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/loader.php' );
 
+
 // check PHP version
 $exit_msg = 'User Role Editor requires PHP '. THIRDPARTYUSERS_MINIMUM_PHP_VERSION .' or newer. '. 
-            '<a href="http://wordpress.org/about/requirements/">Please update!</a>';
-ThirdPartyUsers::check_version( PHP_VERSION, THIRDPARTYUSERS_MINIMUM_PHP_VERSION, $exit_msg, __FILE__ );
+'<a href="http://wordpress.org/about/requirements/">Please update!</a>';
+CheckVersion::check_version( PHP_VERSION, THIRDPARTYUSERS_MINIMUM_PHP_VERSION, $exit_msg, __FILE__ );
 
 // check WP version
 $exit_msg = 'User Role Editor requires WordPress '. THIRDPARTYUSERS_MINIMUM_WP_VERSION .' or newer. '. 
-            '<a href="http://codex.wordpress.org/Upgrading_WordPress">Please update!</a>';
-ThirdPartyUsers::check_version( get_bloginfo( 'version' ), THIRDPARTYUSERS_MINIMUM_WP_VERSION, $exit_msg, __FILE__ );
+'<a href="http://codex.wordpress.org/Upgrading_WordPress">Please update!</a>';
+CheckVersion::check_version( get_bloginfo( 'version' ), THIRDPARTYUSERS_MINIMUM_WP_VERSION, $exit_msg, __FILE__ );
+
 
 // Uninstall action
 register_uninstall_hook( THIRDPARTYUSERS_PLUGIN_FULL_PATH, array('ThirdPartyUsers', 'uninstall') );

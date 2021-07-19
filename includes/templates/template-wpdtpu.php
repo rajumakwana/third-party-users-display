@@ -18,7 +18,7 @@ get_header();
                         <thead>
                             <tr role="row">
                                 
-                                <?php $GLOBALS['thirt_party_users']->wpdtpu_load_datatable_columns() ?>
+                                <?php $GLOBALS['thirt_party_users']->getDataTableObj()->wpdtpu_load_datatable_columns() ?>
                             </tr>
                         </thead>
                         <tbody></tbody>

@@ -10,10 +10,13 @@
 
 if( file_exists( THIRDPARTYUSERS_PLUGIN_DIR .'lib/autoload.php' ) ) {
 
-    require_once( THIRDPARTYUSERS_PLUGIN_DIR .'lib/autoload.php'); // <- change happening here
+    require_once( THIRDPARTYUSERS_PLUGIN_DIR .'lib/autoload.php');
     
 }
 
 require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/define-constants.php' );
+require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/class/class.check.version.php' );
+require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/class/class.enqueue.scripts.php' );
 require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/class/class.third.party.users.php' );
+require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/class/class.datatable.scripts.php' );
 require_once( THIRDPARTYUSERS_PLUGIN_DIR .'includes/class/class.third.party.users.settings.php' );
